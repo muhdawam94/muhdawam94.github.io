@@ -231,6 +231,75 @@
             font-size: 14px;
             line-height: 1.6;
         }
+        .exp-tasks {
+            list-style: none;
+            margin-top: 10px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .exp-tasks li {
+            padding: 3px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .exp-tasks li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--accent);
+            opacity: 0.6;
+        }
+        .exp-tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .exp-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--accent);
+            background: var(--accent-dim);
+            padding: 3px 10px;
+            border-radius: 100px;
+            border: 1px solid rgba(129,140,248,0.15);
+        }
+        
+        /* PROJECTS */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        .project-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            transition: border-color 0.25s, transform 0.25s;
+        }
+        .project-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+        .project-card h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text);
+            letter-spacing: -0.3px;
+        }
+        .project-card p {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .project-card .exp-tags { margin-top: 8px; }
         
         /* SKILLS */
         .skills-grid {
@@ -338,6 +407,7 @@
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#experience">Exp</a>
+                <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -378,7 +448,20 @@
                         </div>
                         <div class="exp-date">2025</div>
                     </div>
-                    <p class="exp-desc">B2B sales strategies, prospecting, negotiations, and relationship management. Closed a two-container sales agreement within the first three months.</p>
+                    <p class="exp-desc">E-commerce & B2B sales for PET resin products</p>
+                    <ul class="exp-tasks">
+                        <li>Developed and executed B2B sales strategies across international markets</li>
+                        <li>Led prospecting, negotiations, presentations, and stakeholder management</li>
+                        <li>Produced company profiles, marketing materials, and social media content</li>
+                        <li>Closed a two-container sales agreement within the first three months</li>
+                        <li>Managed cross-functional team collaboration across remote settings</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="exp-tag">B2B Sales</span>
+                        <span class="exp-tag">Content</span>
+                        <span class="exp-tag">Partnerships</span>
+                        <span class="exp-tag">Remote</span>
+                    </div>
                 </div>
 
                 <div class="exp-item">
@@ -389,7 +472,18 @@
                         </div>
                         <div class="exp-date">2024</div>
                     </div>
-                    <p class="exp-desc">Digital marketing strategies, retail partnerships expansion, and performance monitoring. Generated significant revenue growth.</p>
+                    <p class="exp-desc">Digital marketing & growth for agricultural products</p>
+                    <ul class="exp-tasks">
+                        <li>Developed digital marketing strategies for product launches and campaigns</li>
+                        <li>Expanded retail partnerships and increased market exposure significantly</li>
+                        <li>Managed daily sales reporting, cash-flow tracking, and performance monitoring</li>
+                        <li>Generated significant revenue growth within a short period</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Growth</span>
+                        <span class="exp-tag">Analytics</span>
+                        <span class="exp-tag">Partnerships</span>
+                    </div>
                 </div>
 
                 <div class="exp-item">
@@ -400,7 +494,18 @@
                         </div>
                         <div class="exp-date">2022 &mdash; 2024</div>
                     </div>
-                    <p class="exp-desc">Responsive website interfaces, wireframes, user flows, and prototypes using Figma. Delivered user-centered design solutions.</p>
+                    <p class="exp-desc">Design & product for clients across industries</p>
+                    <ul class="exp-tasks">
+                        <li>Designed responsive website interfaces and conversion-focused landing pages</li>
+                        <li>Created wireframes, user flows, and high-fidelity prototypes in Figma</li>
+                        <li>Delivered user-centered design solutions across multiple industries</li>
+                        <li>Collaborated with distributed teams across different time zones</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Figma</span>
+                        <span class="exp-tag">UX Design</span>
+                        <span class="exp-tag">Remote</span>
+                    </div>
                 </div>
 
                 <div class="exp-item">
@@ -411,7 +516,64 @@
                         </div>
                         <div class="exp-date">2013 &mdash; 2022</div>
                     </div>
-                    <p class="exp-desc">Multi-platform operations (eBay, Amazon, Etsy, Walmart). Increased company profit by ~20% within a quarter through optimization.</p>
+                    <p class="exp-desc">E-commerce & multi-platform marketplace operations</p>
+                    <ul class="exp-tasks">
+                        <li>Managed operations across eBay, Amazon, Etsy, Walmart, and PayPal</li>
+                        <li>Led digital marketing initiatives and supervised marketing team members</li>
+                        <li>Resolved customer issues, account risks, and operational challenges</li>
+                        <li>Increased company profit by ~20% within a quarter through optimization</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Marketplace</span>
+                        <span class="exp-tag">SEO</span>
+                        <span class="exp-tag">Team Lead</span>
+                        <span class="exp-tag">Ops</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <div class="container">
+            <h2 class="section-label">Web3 Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Job Automation Bot</h3>
+                    <p>Built automated job search & application system for Web3 positions. AI-powered form filling with Groq API, integrated with Greenhouse, Lever, and Ashby ATS platforms.</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Python</span>
+                        <span class="exp-tag">Playwright</span>
+                        <span class="exp-tag">AI</span>
+                        <span class="exp-tag">GitHub Actions</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>DeFi Research</h3>
+                    <p>Active participant in DeFi protocols across multiple chains. Experience with DEX trading, liquidity provision, yield farming, and governance participation.</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">DeFi</span>
+                        <span class="exp-tag">DAO</span>
+                        <span class="exp-tag">On-chain</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Community Building</h3>
+                    <p>Active member of Web3 Discord communities. Participated in governance discussions, provided UX feedback on DeFi protocols, connected with founders globally.</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Discord</span>
+                        <span class="exp-tag">Twitter/X</span>
+                        <span class="exp-tag">Telegram</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Web3 Learning</h3>
+                    <p>Self-directed study in Web3 Growth Marketing, DeFi Fundamentals, Token Economics, and Community Management best practices.</p>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Growth</span>
+                        <span class="exp-tag">Tokens</span>
+                        <span class="exp-tag">Marketing</span>
+                    </div>
                 </div>
             </div>
         </div>
